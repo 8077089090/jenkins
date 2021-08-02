@@ -29,7 +29,7 @@
 ///}
 ///}
 
-pipiline{
+pipiline {
 agent any
 environment {
 DEMO_URL = "google.com"
