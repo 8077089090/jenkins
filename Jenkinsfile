@@ -69,8 +69,21 @@ sh 'ls'
 }
 }
 stage('Three') {
+parallel {
+stage('p1') {
 steps {
-echo 'Three'
+sh 'sleep 30'
+}
+}
+stage('p2') {
+steps {
+sh 'sleep 30'
+}
+}
+}
+stage('p3') {
+steps {
+sh 'sleep 30'
 }
 }
 }
