@@ -80,7 +80,6 @@ steps {
 sh 'sleep 30'
 }
 }
-}
 stage('p3') {
 steps {
 sh 'sleep 30'
