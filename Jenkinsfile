@@ -23,6 +23,7 @@ sh 'echo world'
 }
 }
 post {
+agent any
 always {
 sh 'echo post steps'
 }
