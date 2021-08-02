@@ -36,6 +36,9 @@ DEMO_URL = "google.com"
 }
 stages{
 stage('one') {
+environment {
+DEMO_URL = "yahoo.com"
+}
 steps {
 sh  'echo ${DEMO_URL}'
 }
