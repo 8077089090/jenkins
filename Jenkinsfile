@@ -23,6 +23,8 @@ sh 'echo world'
 }
 }
 post {
+always {
 sh 'echo post steps'
+}
 }
 }
