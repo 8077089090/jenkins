@@ -31,6 +31,9 @@
 
 pipeline {
 agent any
+tools {
+    maven 'maven'
+    }
 options { disableConcurrentBuilds() }
 environment {
 DEMO_URL = "google.com"
