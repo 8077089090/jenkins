@@ -22,4 +22,7 @@ sh 'echo world'
 }
 }
 }
+post {
+sh 'echo post steps'
+}
 }
