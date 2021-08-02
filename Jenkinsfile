@@ -3,7 +3,7 @@ pipeline {
 //node { label 'workstation'}
  //label 'JAVA'
 //  }
-agent any
+agent none
    stages {
 stage('Master Node') {
 agent {
