@@ -65,7 +65,12 @@ input {
              //   }
             }
 steps {
-sh 'mvn clean'
+sh 'ls'
+}
+}
+stage('Three') {
+steps {
+echo 'Three'
 }
 }
 }
