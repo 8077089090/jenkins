@@ -1,15 +1,22 @@
 pipeline {
-agent {
+//agent {
 //node { label 'workstation'}
-  label 'JAVA'
-   }
+ //label 'JAVA'
+//  }
+agent none
    stages {
 stage('Master Node') {
+agent {
+label 'MASTER'
+}
 steps {
 sh 'echo hello'
 }
 }
-stage ('slave Node') {
+stage ('Agent Node') {
+agent {
+label 'JAVA'
+}
 steps {
 sh 'echo world'
 }
