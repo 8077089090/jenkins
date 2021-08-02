@@ -9,7 +9,7 @@ steps {
 sh 'echo hello'
 }
 }
-stage ('Agent Node') {
+stage ('slave Node') {
 steps {
 sh 'echo world'
 }
